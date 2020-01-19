@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css"> 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Gelasio|Montserrat:500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+  <title>World Of Forex</title>
+  <link rel = "icon" type = "image/png" href = "/img/bar.png">
+</head>
+<body>
+  <div class="d-flex">
+		<p class="starter"><i class="fas fa-chart-line"></i><a class="home" href="/"> Fx World</a></p>
+    <div class="d-flex ml-auto mr-5">
+			<p class="contact"><i class="fas fa-user"></i><a class="home" href="/about">  About Me</a></p>
+		</div>
+  </div>
+
+  <div class="container mt-3">
+    <div class="wrapper animated bounceInLeft">
+      <div class="company-info">
+        <h3>Where To Start?</h3>
+        <ul>
+          <li><i class="fa fa-road"></i> Tanza, Cavite, Philippines</li>
+          <li><i class="fa fa-phone"></i> 99999999999</li>
+          <li><i class="fa fa-envelope"></i> Inquire And Get Started</li>
+        </ul>
+      </div>
+      <div class="contact">
+        <h3>Send An Email</h3>
+        {{msg}}
+        <form method="POST" action="/send">
+          <p>
+            <label>Name</label>
+            <input type="text" name="name">
+          </p>
+          <p>
+            <label>Company</label>
+            <input type="text" name="company">
+          </p>
+          <p>
+            <label>Email Address</label>
+            <input type="email" name="email">
+          </p>
+          <p>
+            <label>Phone Number</label>
+            <input type="text" name="phone">
+          </p>
+          <p class="full">
+            <label>Message</label>
+            <textarea name="message" rows="5"></textarea>
+          </p>
+          <p class="full">
+            <button type="Submit">Send Mail</button>
+          </p>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
